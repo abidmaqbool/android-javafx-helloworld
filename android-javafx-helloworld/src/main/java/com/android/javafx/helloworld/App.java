@@ -8,6 +8,7 @@ import javafx.geometry.Rectangle2D;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.scene.layout.VBox;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
@@ -33,6 +34,8 @@ public class App extends Application {
             scene = new Scene(root);
 
             stage.setTitle("Android JavaFX Hello World App");
+            Image image = new Image("icon.png");
+            stage.getIcons().add(image);
         }
 
         btnQuit.setOnAction((event) -> {
