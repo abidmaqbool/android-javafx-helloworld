@@ -5,5 +5,5 @@ Simple hello world program for android. Using JavaFx, jfxmobile-plugin without g
 
 | Android App (Nox Player)                                     | Desktop App (Windows 10)                                     |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![Android App](refs/Android App.PNG) | ![Desktop App](refs/Desktop App.PNG) |
+| ![Android App](refs/Android%20App.PNG) | ![Desktop App](refs/Desktop%20App.PNG) |
 
