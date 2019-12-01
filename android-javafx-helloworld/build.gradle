@@ -1,1 +1,33 @@
-apply plugin: 'base'
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'org.javafxports:jfxmobile-plugin:1.3.18'
+    }
+}
+
+apply plugin: 'org.javafxports.jfxmobile'
+
+repositories {
+    jcenter()
+    maven {
+        url 'http://nexus.gluonhq.com/nexus/content/repositories/releases'
+    }
+}
+
+mainClassName = 'com.android.javafx.helloworld.App'
+
+ext.CHARM_DOWN_VERSION = "1.0.0"
+
+dependencies {
+    compile "com.gluonhq:charm-down-common:$CHARM_DOWN_VERSION"
+    desktopRuntime "com.gluonhq:charm-down-desktop:$CHARM_DOWN_VERSION"
+    androidRuntime "com.gluonhq:charm-down-android:$CHARM_DOWN_VERSION"
+}
+
+jfxmobile {
+    android {
+        manifest = 'src/android/AndroidManifest.xml'
+    }
+}

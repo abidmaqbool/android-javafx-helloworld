@@ -1,1 +1,1 @@
-include 'android-javafx-helloworldApp'
+rootProject.name = 'android-javafx-helloworld'
